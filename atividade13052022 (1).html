@@ -112,12 +112,22 @@
     $('#btn1').click(function (e) { 
         
         var valor = $('#caixa1').empty().val();
-        $('#caixa1').val();
-        $('#caixa2').empty().val(valor);
+        $('#caixa1').val('');
+        $('#caixa2').val(valor);
+
 
         console.log(valor);
 
     });
+
+    $('#btn2').click(function (e) { 
+        
+        var valor = $('#caixa2').val();
+        $('#caixa2').val('');
+        $('#caixa1').val(valor);
+    });
+
+    
 
 
 </script>
